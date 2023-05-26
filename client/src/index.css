@@ -8,3 +8,23 @@ body {
   margin: 0;
   font-family: 'Lusitana', serif;
 }
+.ant-btn-primary {
+  background-color: #1677ff;
+}
+
+.stickyHeader{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px){
+  body{
+    overflow: hidden;
+  }
+  .categories::-webkit-scrollbar {
+    display: none;
+  }
+}
