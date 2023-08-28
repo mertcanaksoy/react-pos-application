@@ -40,15 +40,15 @@ const Header = () => {
                             <span className="text-xs">Cart</span>
                         </Link>
                     </Badge>
-                    <Link to="/" className="menu-link flex flex-col hover:text-[#40a9ff] transition-all">
+                    <Link to="/invoices" className="menu-link flex flex-col hover:text-[#40a9ff] transition-all">
                         <FileDoneOutlined className="md:text-2xl text-xl" />
-                        <span className="text-xs">Invoice</span>
+                        <span className="text-xs">Invoices</span>
                     </Link>
-                    <Link to="/" className="menu-link flex flex-col hover:text-[#40a9ff] transition-all">
+                    <Link to="/customers" className="menu-link flex flex-col hover:text-[#40a9ff] transition-all">
                         <UserOutlined className="md:text-2xl text-xl" />
-                        <span className="text-xs">Users</span>
+                        <span className="text-xs">Customerts</span>
                     </Link>
-                    <Link to="/" className="menu-link flex flex-col hover:text-[#40a9ff] transition-all">
+                    <Link to="/statistics" className="menu-link flex flex-col hover:text-[#40a9ff] transition-all">
                         <LineChartOutlined className="md:text-2xl text-xl" />
                         <span className="text-xs">Statistics</span>
                     </Link>

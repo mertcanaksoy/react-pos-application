@@ -1,9 +1,9 @@
 import Header from "../components/header/Header.jsx";
 import { Button, Card, Table } from "antd";
 import { useState } from "react";
-import CreateInvoice from "../components/cart/CreateInvoice.jsx";
+import PrintInvoice from "../components/invoices/PrintInvıice.jsx";
 
-const CartPage = () => {
+const InvoicesPage = () => {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const dataSource = [
@@ -45,31 +45,19 @@ const CartPage = () => {
         <>
             <Header />
             <div className="px-6">
-            <h1 className="text-4xl font-bold text-center mb-4">Cart</h1>
+                <h1 className="text-4xl font-bold text-center mb-4">Invoices</h1>
                 <Table dataSource={dataSource} columns={columns} bordered pagination={false} />
                 <div className="cart-total flex justify-end mt-4">
                     <Card className="w-72">
-                        <div className="flex justify-between">
-                            <span>Sub Total</span>
-                            <span>549.00₺</span>
-                        </div>
-                        <div className="flex justify-between my-2">
-                            <span>Total Tax %8</span>
-                            <span className="text-red-600">+43.92₺</span>
-                        </div>
-                        <div className="flex justify-between">
-                            <b>Total</b>
-                            <b>592.92₺</b>
-                        </div>
                         <Button className="mt-4 w-full" type="primary" size="large" onClick={() => setIsModalOpen(true)} >
-                            Order
+                            Print
                         </Button>
                     </Card>
                 </div>
             </div>
-            <CreateInvoice isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+            <PrintInvoice isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
         </>
     );
 };
 
-export default CartPage
+export default InvoicesPage

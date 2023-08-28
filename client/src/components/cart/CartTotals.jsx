@@ -10,7 +10,7 @@ const CartTotals = () => {
             <ul className="cart-items px-2 flex flex-col pt-2 overflow-y-auto">
                 <li className="cart-item flex justify-between">
                     <div className="flex items-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="" className="w-16 h-16" />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="" className="w-16 h-16 object-contain" />
                         <div className="flex flex-col ml-2">
                             <b>Product Name</b>
                             <span>Price x Count</span>
